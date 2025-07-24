@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=accounting_db'
+      - 'MYSQL_PASSWORD=accounting_password'
+      - 'MYSQL_ROOT_PASSWORD=rootsecret'
+      - 'MYSQL_USER=accounting_user'
+    ports:
+      - '3306:3306'
